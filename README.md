@@ -1,6 +1,6 @@
-# API REST Culturarte
+# API REST Culturarte Grupo 2
 
-## API para gestionar Propuestas y sus Colaboraciones. Desarrollada en Spring Boot
+## API para gestionar Propuestas y sus Colaboraciones.
 
 
 ## Estructura del proyecto
