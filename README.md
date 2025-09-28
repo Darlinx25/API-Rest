@@ -6,13 +6,13 @@
 ## Estructura del proyecto
 ```
 src/main/java/iiss/api_culturarte/
-├─ Controller/       # Endpoints de la API
-├─ Service/          # Lógica de negocio
-├─ Repositorios/     # Interfaces JPA para DB
-├─ Seguridad/        # Configuración de Basic Auth
-├─ Excepciones/      # Manejo de errores
-├─ Propuesta.java    # Entidad Propuesta
-└─ Colaboracion.java # Entidad Colaboración
+├─ Controller/       
+├─ Service/          
+├─ Repositorios/     
+├─ Seguridad/        
+├─ Excepciones/      
+├─ Propuesta.java    
+└─ Colaboracion.java 
 
 build.sh             # Compila y levanta la app (Maven + Docker)
 docker-compose.yml   # Contenedores para la app
