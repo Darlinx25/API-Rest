@@ -1,4 +1,4 @@
 #!/bin/bash
 ./mvnw clean package -DskipTests
 
-docker-compose up --build -d
+docker compose up --build -d
