@@ -40,8 +40,14 @@ public class PropuestaService {
     }
 
     public Optional<Propuesta> findByTitulo(String titulo) {
-        return repo.findById(titulo);
+    List<Propuesta> resultados = repo.findByTituloContainingIgnoreCase(titulo);
+    if (resultados.isEmpty()) {
+        return Optional.empty();
+    } else {
+        return Optional.of(resultados.get(0)); // devuelve el primero que coincida
     }
+    }
+
 
     public Propuesta update(String titulo, Propuesta updated) {
         updated.setTitulo(titulo);

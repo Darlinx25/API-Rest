@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Controller;
-
-/**
- *
- * @author faxcundo
- */
 
 import Excepciones.ResourceNotFoundException;
 import Service.PropuestaService;
@@ -40,18 +31,21 @@ public class PropuestaController {
     }
 
     @GetMapping("/{titulo}")
-    public Propuesta get(@PathVariable String titulo) {
+    public ResponseEntity<Propuesta> get(@PathVariable String titulo) {
         return service.findByTitulo(titulo)
+                .map(ResponseEntity::ok)
                 .orElseThrow(() -> new ResourceNotFoundException("Propuesta no encontrada: " + titulo));
     }
 
+
     @PutMapping("/{titulo}")
-    public Propuesta update(@PathVariable String titulo, @RequestBody Propuesta p) {
+    public ResponseEntity<Propuesta> update(@PathVariable String titulo, @RequestBody Propuesta p) {
         if (service.findByTitulo(titulo).isEmpty()) {
             throw new ResourceNotFoundException("Propuesta no encontrada: " + titulo);
         }
-        return service.update(titulo, p);
+        return ResponseEntity.ok(service.update(titulo, p));
     }
+
 
     @DeleteMapping("/{titulo}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
@@ -62,4 +56,3 @@ public class PropuestaController {
         service.delete(titulo);
     }
 }
-
