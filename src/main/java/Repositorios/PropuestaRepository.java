@@ -9,8 +9,6 @@ package Repositorios;
  * @author faxcundo
  */
 
-
-
 import iiss.api_culturarte.Propuesta;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
