@@ -2,15 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package iiss.Service;
+package iiss.api_culturarte.Service;
 
 /**
  *
  * @author faxcundo
  */
 
-import iiss.Repositorios.ColaboracionRepository;
-import iiss.Repositorios.PropuestaRepository;
+import iiss.api_culturarte.Repositorios.ColaboracionRepository;
+import iiss.api_culturarte.Repositorios.PropuestaRepository;
 import iiss.api_culturarte.Colaboracion;
 import iiss.api_culturarte.Propuesta;
 import org.springframework.stereotype.Service;

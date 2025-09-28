@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package iiss.Repositorios;
+package iiss.api_culturarte.Repositorios;
 /**
  *
  * @author faxcundo

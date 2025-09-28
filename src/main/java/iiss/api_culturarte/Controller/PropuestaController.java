@@ -1,7 +1,7 @@
-package iiss.Controller;
+package iiss.api_culturarte.Controller;
 
-import iiss.Excepciones.ResourceNotFoundException;
-import iiss.Service.PropuestaService;
+import iiss.api_culturarte.Excepciones.ResourceNotFoundException;
+import iiss.api_culturarte.Service.PropuestaService;
 import iiss.api_culturarte.Propuesta;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
