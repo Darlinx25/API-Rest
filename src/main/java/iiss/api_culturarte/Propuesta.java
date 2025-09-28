@@ -4,6 +4,7 @@
  */
 package iiss.api_culturarte;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -23,6 +24,7 @@ public class Propuesta {
     private LocalDate fechaRealizar;
 
     @OneToMany(mappedBy = "propuestaColaborada", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
     private List<Colaboracion> colaboraciones;
     
     private float precioEntrada;
