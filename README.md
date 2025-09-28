@@ -77,6 +77,6 @@ culturarte-app  | Using generated security password: fcf10809-ab34-4d01-9100-9ff
 ```
 Para ver los logs se deve utilizar
 ```
-docker-compose logs
+docker compose logs
 ```
 
