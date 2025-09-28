@@ -75,5 +75,8 @@ Al iniciar, se genera una contraseña temporal en los logs, por ejemplo:
 ```
 culturarte-app  | Using generated security password: fcf10809-ab34-4d01-9100-9fff82ab664f
 ```
-
+Para ver los logs se deve utilizar
+```
+docker-compose logs
+```
 
