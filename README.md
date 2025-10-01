@@ -52,8 +52,7 @@ curl -u user:CONTRASEÑA http://localhost:8080/api/propuestas
 
 # Crear propuesta
 curl -u user:CONTRASEÑA -X POST http://localhost:8080/api/propuestas \
-     -H "Content-Type: application/json" \
-     -d '{
+     -F 'propuesta={
            "titulo": "Hamlet",
            "descripcion": "Interpretación de Hamlet",
            "lugar": "Teatro Cantegril",
@@ -62,7 +61,12 @@ curl -u user:CONTRASEÑA -X POST http://localhost:8080/api/propuestas \
            "montoReunir": 50000.75,
            "categoria": "Teatro clásico",
            "tiposRetorno": ["Entrada gratis","Porcentaje de ganancias"]
-         }'
+         };type=application/json' \
+     -F "imagen=@/path/a/tu/imagen.jpg;type=image/jpeg"
+
+# Obtener imagen de propuesta
+curl -u user:CONTRASEÑA http://localhost:8080/api/propuestas/TITULO \
+     -H "Accept: image/jpeg"
 ```
 
 ## Seguridad
