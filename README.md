@@ -60,10 +60,7 @@ curl -u user:CONTRASEÑA -X POST http://localhost:8080/api/propuestas \
            "fechaRealizar": "2025-11-23",
            "precioEntrada": 640,
            "montoReunir": 50000.75,
-           "fechaPublicacion": "2025-09-27",
            "categoria": "Teatro clásico",
-           "estado": "En financiación",
-           "dineroRecaudado": 1500.5,
            "tiposRetorno": ["Entrada gratis","Porcentaje de ganancias"]
          }'
 ```
