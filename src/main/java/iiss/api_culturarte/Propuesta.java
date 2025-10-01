@@ -27,6 +27,10 @@ public class Propuesta {
     @JsonIgnore
     private List<Colaboracion> colaboraciones;
     
+    @Lob
+    @JsonIgnore
+    private byte[] imagen;
+    
     private float precioEntrada;
 
     private float montoReunir;
@@ -134,4 +138,22 @@ public class Propuesta {
     public void setTiposRetorno(List<String> tiposRetorno) {
         this.tiposRetorno = tiposRetorno;
     }
+
+    public List<Colaboracion> getColaboraciones() {
+        return colaboraciones;
+    }
+
+    public void setColaboraciones(List<Colaboracion> colaboraciones) {
+        this.colaboraciones = colaboraciones;
+    }
+
+    public byte[] getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(byte[] imagen) {
+        this.imagen = imagen;
+    }
+    
+    
 }

@@ -46,8 +46,4 @@ public class ColaboracionService {
 
         return saved;
     }
-
-    public float total() {
-        return colRepo.totalMonto();
-    }
 }

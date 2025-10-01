@@ -37,11 +37,5 @@ public class ColaboracionController {
         Colaboracion created = service.create(c);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }
-
-    @GetMapping("/total")
-    public ResponseEntity<Object> total() {
-        float total = service.total();
-        return ResponseEntity.ok(java.util.Map.of("acumulado", total));
-    }
 }
 
