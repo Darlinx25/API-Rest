@@ -15,6 +15,7 @@ import iiss.api_culturarte.Excepciones.ResourceNotFoundException;
 import iiss.api_culturarte.Repositorios.PropuestaRepository;
 import iiss.api_culturarte.Propuesta;
 import java.io.IOException;
+import java.time.LocalDate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -41,6 +42,7 @@ public class PropuestaService {
     public Propuesta create(Propuesta propuesta, MultipartFile imagen) {
         if (propuesta.getEstado() == null) {
             propuesta.setEstado("publicada");
+            propuesta.setFechaPublicacion(LocalDate.now());
         }
         if (imagen != null && !imagen.isEmpty()) {
             try {
